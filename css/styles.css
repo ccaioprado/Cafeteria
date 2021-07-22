@@ -1,0 +1,48 @@
+/* A aplicação do asterisco ao navegador informa que todos os elemtos da tela receberão essa formatação */
+*{
+    margin: 0; /*Estamos zerando as margens externas*/
+    padding: 0;  /* Estamos zerando as margens internas*/
+}
+
+/* Vamos aplicar na tag header cor de fundo e padding */
+header{
+    background-color: #4e342e;
+    padding-top:150px;
+    background-image: url(../img/caferia4.jpg);
+    background-position: 0 -400px; 
+    transition: ease 2s; /*Efeito de animação com transition. Efeito ease com 2s*/
+
+
+
+}   
+
+/* Formatar a tag h1 que esta dentro do header */
+header h1{
+    color: #fff; /*Cor da letra*/ 
+    font-family: "Arial"; /* Mudar a fonte da letra*/
+    text-align: center;
+}
+
+header nav{
+    background-color: #6d4c41 ;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+header nav ul li{
+    /* exibir os itens da lista um ao lado do outro. Usaremos o comando display (tela/exibir) inline-block(blocos em linha) */
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li a{
+    color:white;
+    font-family: "Arial";
+    text-decoration: none; /*Retirar o underline*/
+}
+
+header nav ul li a:hover{
+    color:#a1887f 
+}
+
