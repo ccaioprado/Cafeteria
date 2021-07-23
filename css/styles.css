@@ -1,48 +1,80 @@
 /* A aplicação do asterisco ao navegador informa que todos os elemtos da tela receberão essa formatação */
-*{
-    margin: 0; /*Estamos zerando as margens externas*/
-    padding: 0;  /* Estamos zerando as margens internas*/
+* {
+  margin: 0; /*Estamos zerando as margens externas*/
+  padding: 0; /* Estamos zerando as margens internas*/
 }
 
 /* Vamos aplicar na tag header cor de fundo e padding */
-header{
-    background-color: #4e342e;
-    padding-top:150px;
-    background-image: url(../img/caferia4.jpg);
-    background-position: 0 -400px; 
-    transition: ease 2s; /*Efeito de animação com transition. Efeito ease com 2s*/
-
-
-
-}   
+header {
+  background-color: #4e342e;
+  padding-top: 150px;
+  background-image: url(../img/caferia4.jpg);
+  background-position: 0 -500px;
+  transition: ease 2s; /*Efeito de animação com transition. Efeito ease com 2s*/
+}
 
 /* Formatar a tag h1 que esta dentro do header */
-header h1{
-    color: #fff; /*Cor da letra*/ 
-    font-family: "Arial"; /* Mudar a fonte da letra*/
-    text-align: center;
+header h1 {
+  color: #fff; /*Cor da letra*/
+  font-family: "Arial"; /* Mudar a fonte da letra*/
+  text-align: center;
 }
 
-header nav{
-    background-color: #6d4c41 ;
-    text-align: center;
-    padding: 5px;
-    
+header nav {
+  background-color: #6d4c41;
+  text-align: center;
+  padding: 5px;
 }
 
-header nav ul li{
-    /* exibir os itens da lista um ao lado do outro. Usaremos o comando display (tela/exibir) inline-block(blocos em linha) */
-    display: inline-block;
-    margin: 5px;
+header nav ul li {
+  /* exibir os itens da lista um ao lado do outro. Usaremos o comando display (tela/exibir) inline-block(blocos em linha) */
+  display: inline-block;
+  margin: 5px;
 }
 
-header nav ul li a{
-    color:white;
-    font-family: "Arial";
-    text-decoration: none; /*Retirar o underline*/
+header nav ul li a {
+  color: white;
+  font-family: "Arial";
+  text-decoration: none; /*Retirar o underline*/
 }
 
-header nav ul li a:hover{
-    color:#a1887f 
+header nav ul li a:hover {
+  color: #a1887f;
 }
 
+footer {
+  /* Aplicar cor de fundo */
+  background-color: #4e342e;
+  padding: 80px;
+  padding-top: 40px;
+  height: 150px;
+}
+
+/* Para fazer uma formatação numa tag que tenha um id definido é necessario que você, é necessario adicionaer uma hashtag ao inico do nome do id. Nesse caso, nossa div tem id chamado end,então aplicamos dessa forma: #end */
+footer #end {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15pt;
+  float: left;
+}
+
+/* Para fazer uma formatação numa tag que tenha um id definido é necessario que você, é necessario adicionaer uma hashtag ao inico do nome do id. Nesse caso, nossa div tem id chamado redes,então aplicamos dessa forma: #redes */
+footer #redes {
+  border: solid 1px red;
+  float: right;
+}
+
+footer #redes a {
+  text-decoration: none;
+}
+
+footer #redes a img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  transition: ease 0.5s;
+}
+
+footer #redes a img:hover {
+  transform: rotate(360deg);
+}
