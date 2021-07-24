@@ -78,3 +78,39 @@ footer #redes a img {
 footer #redes a img:hover {
   transform: rotate(360deg);
 }
+
+main h2 {
+  font-size: 20pt;
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: #600 1px solid;
+  text-align: center;
+}
+
+main p {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  text-align: justify;
+  line-height: 25pt;
+  margin-bottom: 30px;
+}
+
+main #imghome {
+  text-align: center;
+}
+
+main #imghome img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+  margin: 10px;
+  opacity: 0.6;
+  transition: ease 0.5s;
+}
+
+main #imghome img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
