@@ -33,7 +33,41 @@ footer - rodapé com informações da localização e redes sociais -->
     <!-- Fim da area do Header -->
 
     <!-- Inicio da area do main -->
-    <main></main>
+    <main>
+        <h2>Contato</h2>
+        <!-- Criação de formulario com as tags: 
+        form - formulario 
+        imput - caixa para realizar a entrada de texto
+        imput radio - botão de opção
+        select - menu de seleção 
+        textarea - caixa onde o usuario poderá escolher uma mensagem
+        imput submit - botão para o envio dos dados -->
+        <form>
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="Email" required>
+            <span>
+                <input type="radio" name="sexo" value="Masculino"> Masculino
+                <input type="radio" name="sexo" value="Feminino"> Feminino
+                <input type="radio" name="sexo" value="Outros"> Outros
+            </span>
+            
+            <select>
+                <option>Elogio</option>
+                <option>Sugestão</option>
+                <option>Crítica</option>
+                <option>Dúvida</option>
+                <option>Outros</option>
+            </select>
+
+            <textarea>Mensagem</textarea>
+            <input type="submit" value="Enviar"
+
+
+
+        </form>
+
+
+    </main>
     <!-- Fim da area do main -->
 
     <!-- Inicio da area do footer -->
