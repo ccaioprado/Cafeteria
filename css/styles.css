@@ -60,7 +60,6 @@ footer #end {
 
 /* Para fazer uma formatação numa tag que tenha um id definido é necessario que você, é necessario adicionaer uma hashtag ao inico do nome do id. Nesse caso, nossa div tem id chamado redes,então aplicamos dessa forma: #redes */
 footer #redes {
-  border: solid 1px red;
   float: right;
 }
 
@@ -133,3 +132,49 @@ main #video iframe {
   width: 90;
   height: 400px;
 }
+
+/* Inicio da formatação do cardápio */
+main #area #conteudo #img img {
+  width: 100px;
+  height: 100px;
+}
+
+main #area #conteudo #img {
+  width: 210px;
+  /* Fazer a caixa de texto flutuar para a esquerda */
+  float: left;
+}
+
+main #area #conteudo #texto {
+  width: 600px;
+  float: left;
+}
+
+/* Aplicar a exibição(display) inline-block para as caixas area e conteudo */
+main #area,
+main #area #conteudo {
+  display: inline-block;
+  width: 100%;
+}
+
+main #area #conteudo #texto h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  margin: 5px;
+}
+
+main #area #conteudo #texto spam {
+  color: red;
+}
+
+main #area #conteudo {
+  margin-left: 50px;
+}
+
+main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  margin: 50px;
+}
+
+/* Fim da area de formatação */
